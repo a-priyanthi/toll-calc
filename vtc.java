@@ -1,7 +1,7 @@
 import java.util.Scanner;
 abstract class vehicle
 {
-    final int num; static int count; //static int c=0;
+    final int num; static int count; 
     static final int m; static int reg[]=new int[10];
 
     static{m=50;}
@@ -41,15 +41,6 @@ class car extends vehicle
         int toll = 200+m;
         return toll;
     }
-
-    
-
-    /*void display()
-    {
-        System.out.println("Vehicle number: "+num);
-        System.out.println("Toll amount: $"+calc());
-        
-    }*/
 }
 
 class bus extends vehicle
@@ -66,13 +57,6 @@ class bus extends vehicle
         return toll;
     }
 
-
-    /*void display()
-    {
-        System.out.println("Vehicle number: "+num);
-        System.out.println("Toll amount: $"+calc());
-        
-    }*/
 }
 
 class truck extends vehicle
@@ -89,13 +73,6 @@ class truck extends vehicle
         return toll;
     }
 
-    
-    /*void display()
-    {
-        System.out.println("Vehicle number: "+num);
-        System.out.println("Toll amount: $"+calc());
-        
-    }*/
 }
 
 public class vtc
